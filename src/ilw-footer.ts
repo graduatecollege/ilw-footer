@@ -6,6 +6,7 @@ import { default as wordmark } from "./wordmark.svg"
 import { property, queryAssignedElements } from "lit/decorators.js";
 import { CampusFooterData, CampusFooterSection, CampusLink } from "./models/campus-footer-data";
 import { classMap } from 'lit/directives/class-map.js';
+import footerData from "./footer.json";
 
 export class Footer extends LitElement {
   // override tag name in inherited classes to ensure proper document queries.
@@ -22,7 +23,7 @@ export class Footer extends LitElement {
   @property({
     attribute: false
   })
-  _data?: CampusFooterData;
+  _data?: CampusFooterData = footerData as any;
 
   @property({
     attribute: false,
@@ -153,48 +154,6 @@ export class Footer extends LitElement {
     if (this._actions === undefined || this._actions.length <= 0) {
       this._sectionClasses["section-grid--no-action"] = true;
     }
-
-    if (this._cookiesButton === undefined || this._cookiesButton.length === 0) {
-      console.warn('No cookie banner found. Assigning standard Illinois cookie banner.')
-      this.generateCookieBanner();
-    }
-
-    this.checkSocialDataService(this._social);
-  }
-
-  private checkSocialDataService(social?: Array<HTMLElement>): void {
-    if (social === undefined || social.length === 0) {
-      return;
-    }
-
-    if (social.some(e => e.innerHTML.includes('data-service'))) {
-      console.warn("ilw-footer: Use of the 'data-service' attribute in social media icons is deprecated.\nSee https://github.com/web-illinois/ilw-footer/blob/main/README.md for update instructions.");
-    }
-  }
-
-  private generateCookieBanner(): void {
-    const button = document.createElement('button');
-    button.id = 'ot-sdk-btn';
-    button.classList.add('ot-sdk-show-settings', 'ilw-button');
-    button.setAttribute('slot', 'cookies-button');
-    button.innerText = 'About Cookies';
-    const footer = document.getElementsByTagName(this.TagName);
-    if (!footer) {
-      console.error('footer component not found');
-      return;
-    }
-    footer[0].appendChild(button);
-
-    const wrapper = document.createElement('script');
-    wrapper.innerText = 'function OptanonWrapper() {}';
-    document.head.appendChild(wrapper);
-
-    const script = document.createElement('script');
-    script.src = 'https://onetrust.techservices.illinois.edu/scripttemplates/otSDKStub.js';
-    script.id = 'cookie-js';
-    script.setAttribute('data-domain-script', 'uiuc');
-
-    document.head.appendChild(script);
   }
 
   private generateUtm(): string {

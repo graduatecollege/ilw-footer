@@ -13,13 +13,7 @@
     ],
     "exports": {
         ".": {
-            "import": "./dist/ilw-footer.js",
-            "require": "./dist/ilw-footer.cjs",
-            "default": "./dist/ilw-footer.js",
-            "types": [
-                "./dist/ilw-footer.d.ts",
-                "./dist/wordmark.svg.d.ts"
-            ]
+            "import": "./dist/ilw-footer.js"
         },
         "./ilw-footer.css": {
             "import": "./dist/ilw-footer.css"
