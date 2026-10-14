@@ -191,103 +191,103 @@ ilw-footer {
         }
 
         a[data-service="bluesky"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/bluesky.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/bluesky.svg");
+            --ilw-footer-social-icon: url("./icons/blue/bluesky.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/bluesky.svg");
         }
 
         a[data-service="calendar"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/calendar.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/calendar.svg");
+            --ilw-footer-social-icon: url("./icons/blue/calendar.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/calendar.svg");
         }
 
         a[data-service="facebook"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/facebook.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/facebook.svg");
+            --ilw-footer-social-icon: url("./icons/blue/facebook.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/facebook.svg");
         }
 
         a[data-service="flickr"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/flickr.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/flickr.svg");
+            --ilw-footer-social-icon: url("./icons/blue/flickr.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/flickr.svg");
         }
 
         a[data-service="github"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/github.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/github.svg");
+            --ilw-footer-social-icon: url("./icons/blue/github.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/github.svg");
         }
 
         a[data-service="instagram"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/instagram.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/instagram.svg");
+            --ilw-footer-social-icon: url("./icons/blue/instagram.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/instagram.svg");
         }
 
         a[data-service="linkedin"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/linkedin.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/linkedin.svg");
+            --ilw-footer-social-icon: url("./icons/blue/linkedin.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/linkedin.svg");
         }
 
         a[data-service="mastodon"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/mastodon.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/mastodon.svg");
+            --ilw-footer-social-icon: url("./icons/blue/mastodon.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/mastodon.svg");
         }
 
         a[data-service="pinterest"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/pinterest.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/pinterest.svg");
+            --ilw-footer-social-icon: url("./icons/blue/pinterest.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/pinterest.svg");
         }
 
         a[data-service="reddit"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/reddit.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/reddit.svg");
+            --ilw-footer-social-icon: url("./icons/blue/reddit.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/reddit.svg");
         }
 
         a[data-service="snapchat"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/snapchat.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/snapchat.svg");
+            --ilw-footer-social-icon: url("./icons/blue/snapchat.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/snapchat.svg");
         }
 
         a[data-service="spotify"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/spotify.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/spotify.svg");
+            --ilw-footer-social-icon: url("./icons/blue/spotify.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/spotify.svg");
         }
 
         a[data-service="threads"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/threads.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/threads.svg");
+            --ilw-footer-social-icon: url("./icons/blue/threads.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/threads.svg");
         }
 
         a[data-service="tiktok"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/tiktok.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/tiktok.svg");
+            --ilw-footer-social-icon: url("./icons/blue/tiktok.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/tiktok.svg");
         }
 
         a[data-service="twitter"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/twitter.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/twitter.svg");
+            --ilw-footer-social-icon: url("./icons/blue/twitter.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/twitter.svg");
         }
 
         a[data-service="weibo"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/weibo.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/weibo.svg");
+            --ilw-footer-social-icon: url("./icons/blue/weibo.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/weibo.svg");
         }
 
         a[data-service="whatsapp"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/whatsapp.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/whatsapp.svg");
+            --ilw-footer-social-icon: url("./icons/blue/whatsapp.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/whatsapp.svg");
         }
 
         a[data-service="x"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/x.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/x.svg");
+            --ilw-footer-social-icon: url("./icons/blue/x.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/x.svg");
         }
 
         a[data-service="yelp"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/yelp.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/yelp.svg");
+            --ilw-footer-social-icon: url("./icons/blue/yelp.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/yelp.svg");
         }
 
         a[data-service="youtube"] {
-            --ilw-footer-social-icon: url("https://cdn.brand.illinois.edu/icons/solid/blue/youtube.svg");
-            --ilw-footer-social-icon-hover: url("https://cdn.brand.illinois.edu/icons/solid/orange/youtube.svg");
+            --ilw-footer-social-icon: url("./icons/blue/youtube.svg");
+            --ilw-footer-social-icon-hover: url("./icons/orange/youtube.svg");
         }
         /** social icon data-service deprecated */
     }
