@@ -18,11 +18,11 @@ export default defineConfig({
         },
     ],
     webServer: {
-        command: 'npm run dev',
-        url: 'http://localhost:5173/samples/index.html',
+        command: 'npm run test-dev',
+        url: 'http://localhost:5174/samples/index.html',
         reuseExistingServer: !process.env.CI,
     },
     use: {
-        baseURL: 'http://localhost:5173',
+        baseURL: 'http://localhost:5174',
     },
 });

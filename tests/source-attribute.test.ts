@@ -1,6 +1,7 @@
 import { expect, test } from "vitest";
 import { render } from "vitest-browser-lit";
 import { html } from "lit";
+import "../src/ilw-footer";
 import { Footer } from "../src/ilw-footer";
 
 const sample = html`
@@ -41,4 +42,30 @@ test('custom source reflected in utm values', async () => {
   const hrefs = links.map(l => l.getAttribute('href') ?? '');
   const actual = hrefs.every(h => expect(h).toContain(expected));
   expect(actual).toBeTruthy();
+})
+
+test('custom data-url loads footer data from specified URL', async () => {
+  const customJson = {
+    illinois: {
+      sections: [
+        {
+          label: 'Custom Section',
+          links: [
+            { label: 'Custom Link', href: 'https://example.com/custom' }
+          ]
+        }
+      ]
+    }
+  };
+  const dataUri = `data:application/json,${encodeURIComponent(JSON.stringify(customJson))}`;
+
+  const screen = render(html`
+    <ilw-footer data-testid="custom-url" data-url="${dataUri}">
+      <p slot="site-name"><a href="http://example.com/">Example Site Name</a></p>
+    </ilw-footer>
+  `);
+  const heading = screen.getByText('Custom Section');
+  await expect.element(heading).toBeInTheDocument();
+  const link = screen.getByText('Custom Link');
+  await expect.element(link).toBeInTheDocument();
 })

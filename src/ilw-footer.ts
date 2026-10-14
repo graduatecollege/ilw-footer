@@ -21,6 +21,12 @@ export class Footer extends LitElement {
   source: string
 
   @property({
+    attribute: 'data-url',
+    reflect: true,
+  })
+  dataUrl?: string;
+
+  @property({
     attribute: false
   })
   _data?: CampusFooterData = footerData as any;
@@ -51,7 +57,6 @@ export class Footer extends LitElement {
   constructor() {
     super();
     this.source = this._defaultSource;
-    this._data = undefined;
   }
 
   connectedCallback() {
@@ -61,7 +66,8 @@ export class Footer extends LitElement {
   }
 
   async loadData() {
-    const resp = await fetch('https://cdn.brand.illinois.edu/data/footer.json');
+    if (!this.dataUrl) return;
+    const resp = await fetch(this.dataUrl);
     this._data = await resp.json();
   }
 
